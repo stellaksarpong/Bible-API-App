@@ -1,0 +1,108 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        background-image: url('stella.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    
+    form {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        font-size: 1.2em;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        text-align: center;
+    }
+    
+    button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+    
+    p {
+        font-size: 1.5em;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+    }
+    #previewContainer {
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        z-index: 2; 
+        position: relative; 
+        text-align: center;
+        width: 100%; 
+        max-width: 600px; 
+        overflow: scroll;
+        height: 200px;
+    }
+    #previewContainer::-webkit-scrollbar{
+        background:transparent;
+    }
+    #previewContainer::-webkit-scrollbar-corner{
+        border-radius: 20px;
+    }
+    .loader {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: block;
+        margin: 15px auto;
+        position: relative;
+        background: #FFF;
+        box-sizing: border-box;
+        animation: shadowExpandX 2s linear infinite alternate;
+        
+    }
+    
+    @keyframes shadowExpandX {
+        0% {
+            box-shadow: 0 0;
+            color: rgba(255, 255, 255, 0.2);
+        }
+        100% {
+            box-shadow: -24px 0, 24px 0;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    #previewContainer span {
+        font-size: 1.5em;
+        line-height: 1.6em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    }
+    
+    
