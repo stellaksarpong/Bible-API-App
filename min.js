@@ -11,9 +11,9 @@ btnSearch.addEventListener('click', getBibleVerse);
 // Listen for changes in the input field to re-enable the search button when typing starts
 txtVerse.addEventListener('input', function() {
     if (txtVerse.value.trim()) {
-        btnSearch.disabled = false; // Enable the button when there's input
+        btnSearch.disabled = false; 
     } else {
-        btnSearch.disabled = true; // Keep it disabled if input is empty
+        btnSearch.disabled = true; 
     }
 });
 
